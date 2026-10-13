@@ -1,0 +1,15 @@
+{
+ "version": "v1.0",
+ "asset": "Samurai_PS2_KO_v1.0.xdelta",
+ "asset_size": 1000879,
+ "asset_sha256": "7385fa4d5ebe550158099744cfbc1cbe55afe7c4cf034eb59bcf86406eb28bb5",
+ "source_bin_size": 646818816,
+ "source_bin_md5": "a4cf5fd559fc5872ba402b1a43517878",
+ "source_bin_sha256": "4b026727d26e72905d0ca2aa33c1aa171a1496a9556f7e2143ccaf6b78380761",
+ "result_iso_size": 563216384,
+ "result_iso_sha256": "b88a03481b653fc11c49097b24f6edec4e6486ca75dc915d997ec19be4dac571",
+ "widescreen_pnach": "SLPS-20178_116967CD.pnach",
+ "widescreen_pnach_size": 602,
+ "widescreen_pnach_sha256": "5babeb62befb7aa25a3e04439195aa16de2665e9b7e8ba5e816e328bf10ded2c",
+ "korean_elf_crc": "116967CD"
+}
