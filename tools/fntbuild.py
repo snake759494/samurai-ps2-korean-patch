@@ -6,8 +6,8 @@ import fnt
 KANJI_LO, KANJI_HI = 0x889F, 0x9872
 SPACE_CODE = 0x889F          # 좁은 공백 (한국어 띄어쓰기)
 OVERRIDE = {0x8163: '…'}   # 원본 …는 세로 점(⋮)
-# 저장 데이터의 기본 이름 「名無し侍」를 「이름없는무사」로 보이게 하는 예약 글리프
-RESERVED = {0x96BC: '이름', 0x96B3: '없는', 0x82B5: '무', 0x8E98: '사'}
+# 저장 데이터의 기본 이름 「名無し侍」를 「무명무사」로 보이게 하는 예약 글리프
+RESERVED = {0x96BC: '무', 0x96B3: '명', 0x82B5: '무', 0x8E98: '사'}
 SPACE_W = 7                  # 공백 글리프 폭 (advance = w+1)
 BAD_TRAIL = {0x40, 0x5C, 0x7B, 0x7D, 0x7F, 0x22, 0x23, 0x24}
 CELL = 22

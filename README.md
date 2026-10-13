@@ -1,10 +1,10 @@
 # 사무라이 (PS2 侍 ~SAMURAI~) 한글패치
 
-PS2 일본판 **侍 ~SAMURAI~ (SLPS-20178)** 용 비공식 한국어 패치입니다. 대사·튜토리얼·메뉴·시스템 메시지 전체와 메뉴·칭호·엔딩 자막 등의 글자 그림을 한국어로 바꿨습니다. 현재 배포판은 **v1.0 (2026-10-13)** 입니다.
+PS2 일본판 **侍 ~SAMURAI~ (SLPS-20178)** 용 비공식 한국어 패치입니다. 대사·튜토리얼·메뉴·시스템 메시지 전체와 메뉴·칭호·엔딩 자막 등의 글자 그림을 한국어로 바꿨습니다. 현재 배포판은 **v1.0.1 (2026-10-13)** 입니다.
 
 [패치 다운로드](https://github.com/snake759494/samurai-ps2-korean-patch/releases/latest) · [기술 설명](docs/TECHNICAL.md) · [재빌드](docs/BUILD.md) · [변경 기록](CHANGELOG.md) · [권리 안내](RIGHTS.md)
 
-릴리즈 첨부 파일은 **한글패치 `Samurai_PS2_KO_v1.0.xdelta`** 와 **PCSX2용 16:9 와이드 패치 `SLPS-20178_116967CD.pnach`** 두 개입니다. 저장소에는 제작 도구와 기술 문서만 공개합니다. 원본 및 완성 디스크 이미지, 추출한 게임 파일, 글꼴 파일, 외부 실행 파일, 일본어 원문, 번역 대본은 포함하지 않습니다.
+릴리즈 첨부 파일은 **한글패치 `Samurai_PS2_KO_v1.0.1.xdelta`** 와 **PCSX2용 16:9 와이드 패치 `SLPS-20178_116967CD.pnach`** 두 개입니다. 저장소에는 제작 도구와 기술 문서만 공개합니다. 원본 및 완성 디스크 이미지, 추출한 게임 파일, 글꼴 파일, 외부 실행 파일, 일본어 원문, 번역 대본은 포함하지 않습니다.
 
 ## 대상 버전
 
@@ -17,10 +17,10 @@ PS2 일본판 **侍 ~SAMURAI~ (SLPS-20178)** 용 비공식 한국어 패치입�
 | 원본 BIN 크기 | 646,818,816 바이트 |
 | **원본 BIN MD5** | `a4cf5fd559fc5872ba402b1a43517878` |
 | 원본 BIN SHA-256 | `4b026727d26e72905d0ca2aa33c1aa171a1496a9556f7e2143ccaf6b78380761` |
-| xdelta 파일 크기 | 1,000,879 바이트 |
-| xdelta SHA-256 | `7385fa4d5ebe550158099744cfbc1cbe55afe7c4cf034eb59bcf86406eb28bb5` |
+| xdelta 파일 크기 | 1,000,706 바이트 |
+| xdelta SHA-256 | `f69e692fdb5f4c2f2b061a6076a9dff81df7f50ca26f3cabbdd14e33f5aa1759` |
 | 적용 결과 ISO 크기 | 563,216,384 바이트 (2,048 바이트 섹터 ISO) |
-| 적용 결과 ISO SHA-256 | `b88a03481b653fc11c49097b24f6edec4e6486ca75dc915d997ec19be4dac571` |
+| 적용 결과 ISO SHA-256 | `6d94cac9e2fd2fe0630475710fcdd72bb395d1b6f2217f791cf2e7f74a4cd2c6` |
 
 > 결과물은 `.bin` 이 아니라 **2,048 바이트 섹터 `.iso`** 입니다. PCSX2 에서 그대로 실행됩니다.
 
@@ -36,7 +36,7 @@ Get-FileHash -Algorithm MD5 -LiteralPath '.\Samurai (Japan, Asia).bin'
 
 ### xdelta UI 사용
 
-1. 릴리즈에서 `Samurai_PS2_KO_v1.0.xdelta` 를 받습니다.
+1. 릴리즈에서 `Samurai_PS2_KO_v1.0.1.xdelta` 를 받습니다.
 2. xdelta3 패치를 지원하는 도구(xdeltaUI 등)의 **Apply Patch** 기능을 엽니다.
 3. **Patch** 에 xdelta 파일, **Source File** 에 해시가 일치하는 원본 `.bin` 을 선택합니다.
 4. **Output File** 에 새 파일명(예: `Samurai (Korean).iso`)을 지정합니다.
@@ -44,12 +44,12 @@ Get-FileHash -Algorithm MD5 -LiteralPath '.\Samurai (Japan, Asia).bin'
 ### 명령줄 사용
 
 ```powershell
-.\xdelta3.exe -d -s '.\Samurai (Japan, Asia).bin' '.\Samurai_PS2_KO_v1.0.xdelta' '.\Samurai (Korean).iso'
+.\xdelta3.exe -d -s '.\Samurai (Japan, Asia).bin' '.\Samurai_PS2_KO_v1.0.1.xdelta' '.\Samurai (Korean).iso'
 ```
 
 ## 16:9 와이드 화면 패치 (PCSX2)
 
-`SLPS-20178_116967CD.pnach` 는 v1.0 한글판 전용 와이드 패치입니다. 저장소의 `widescreen/` 폴더에도 같은 파일이 있습니다.
+`SLPS-20178_116967CD.pnach` 는 v1.0 / v1.0.1 한글판 공용 와이드 패치입니다. 저장소의 `widescreen/` 폴더에도 같은 파일이 있습니다.
 
 - PCSX2 에 내장된 원본판용 와이드 패치(작성자 ElHecht, 일본판 Arapapa)와 **내용이 같습니다.** 한글판은 실행 파일이 바뀌어 CRC 가 원본판(A7110F33)과 다르므로(한글판 **116967CD**), 내장 패치가 자동으로 적용되지 않습니다. 이 파일을 쓰세요.
 - 패치 대상 주소 9곳의 원래 값이 한글판 실행 파일과 모두 일치하는 것을 확인했습니다.
@@ -75,7 +75,7 @@ Get-FileHash -Algorithm MD5 -LiteralPath '.\Samurai (Japan, Asia).bin'
 
 - 대사 스크립트 4,212개 문자열: 스토리·이벤트·마을 사람 대사, 튜토리얼(사무라이 입문), 선택지, 알림 문구
 - 실행 파일 문자열 약 560개: 메뉴, 메모리 카드 안내, 칼·기술·인물 이름, 획득 메시지
-- 이름 입력: 히라가나·가타카나·한자 표를 한글 음절 표(「한글1·2·3」)로 교체, 기본 이름 「이름없는무사」
+- 이름 입력: 히라가나·가타카나·한자 표를 한글 음절 표(「한글1·2·3」)로 교체, 기본 이름 「무명무사」
 - 글자 그림: 타이틀 메뉴, 주인공 설정, 설정, 기록·칭호(칭호명 13종), 사무라이 입문, 기술 분류, 조작 설명표, 지도 지명, 칼 창고, 순위, 대전 설정, 엔딩 세로 자막 25장, 「끝」「그 후……」
 - 글꼴: 대사 나눔스퀘어네오 Bold, 그림 속 명조 계열 글자 서울한강체
 
@@ -83,7 +83,7 @@ Get-FileHash -Algorithm MD5 -LiteralPath '.\Samurai (Japan, Asia).bin'
 
 - 스태프 롤(실명 크레딧)과 영문 그림(PRESS START BUTTON, YOU WIN 등)은 원본 그대로입니다.
 - 음성·동영상은 원본 그대로입니다.
-- 원본 일본판으로 만든 메모리 카드 시스템 파일을 쓰면 저장된 기본 이름이 「이름없는무사」로 표시됩니다(새 이름 입력 시 바뀜).
+- 원본 일본판으로 만든 메모리 카드 시스템 파일을 쓰면 저장된 기본 이름이 「무명무사」로 표시됩니다(새 이름 입력 시 바뀜).
 
 ## 저장소 구성
 
