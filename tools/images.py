@@ -115,6 +115,9 @@ def patch_one(b, items, root):
         if asc:
             mode = mode[:-4]
             it['order'] = [k for k in range(16) if k != bg and k > bg]
+        if '!o=' in mode:   # 칠할 색 번호를 직접 지정 (가장자리→중심, 16진)
+            mode, o = mode.split('!o=')
+            it['order'] = [int(t, 16) for t in o.split(',')]
         if mode.startswith('vc@'):
             cx, pitch = map(float, mode[3:].split(':'))
             r = vcols(it['text'], x0, y0, x1, y1, cx, pitch, fp, maxv)

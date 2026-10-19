@@ -1,15 +1,30 @@
 {
- "version": "v1.0.1",
- "asset": "Samurai_PS2_KO_v1.0.1.xdelta",
- "asset_size": 1000706,
- "asset_sha256": "f69e692fdb5f4c2f2b061a6076a9dff81df7f50ca26f3cabbdd14e33f5aa1759",
+ "version": "v1.0.2",
+ "assets": {
+  "Samurai_PS2_KO_v1.0.2_ISO.xdelta": {
+   "size": 999702,
+   "sha256": "5d9a34e72adb49b0f0580f09392eea2fa36f4a0d0bc3438e100fcfa2d02ed23b"
+  },
+  "Samurai_PS2_KO_v1.0.2_BIN.xdelta": {
+   "size": 1289001,
+   "sha256": "20fcd07f9053b459d82aa8d5640e45cae9d454c16d4be9df131e58bfcb89a6c0"
+  },
+  "SLPS-20178_DF6FA9CB.pnach": {
+   "size": 602,
+   "sha256": "5babeb62befb7aa25a3e04439195aa16de2665e9b7e8ba5e816e328bf10ded2c"
+  }
+ },
  "source_bin_size": 646818816,
  "source_bin_md5": "a4cf5fd559fc5872ba402b1a43517878",
  "source_bin_sha256": "4b026727d26e72905d0ca2aa33c1aa171a1496a9556f7e2143ccaf6b78380761",
- "result_iso_size": 563216384,
- "result_iso_sha256": "6d94cac9e2fd2fe0630475710fcdd72bb395d1b6f2217f791cf2e7f74a4cd2c6",
- "widescreen_pnach": "SLPS-20178_116967CD.pnach",
- "widescreen_pnach_size": 602,
- "widescreen_pnach_sha256": "5babeb62befb7aa25a3e04439195aa16de2665e9b7e8ba5e816e328bf10ded2c",
- "korean_elf_crc": "116967CD"
+ "result_iso": {
+  "size": 563216384,
+  "sha256": "bd134123059ac9fcfc7aec585649af20592be1467421e3809039849b14ef825c"
+ },
+ "result_bin": {
+  "size": 646818816,
+  "md5": "dec42fbd3744417e5c570fa3a1ee63f5",
+  "sha256": "23ac28dc3ddc8e4e81f36857ce4cc4d2d00f0196e20536f59a0dc37de6781db6"
+ },
+ "korean_elf_crc": "DF6FA9CB"
 }
